@@ -161,7 +161,7 @@ Además, te invitamos a visitar nuestro [Código de Conducta](https://github.com
 | ----------------------------------------------------- | ----------------------------- | --------- |
 | [Victor Kneider](https://github.com/VKneider)         | victorkneider@gmail.com       | Venezuela |
 | [Gianny Marquina](https://github.com/GianMRV)         | gira.208@gmail.com            | Venezuela |
-| [Sebastián Navas](https://github.com/sebastiaannavas) | sebastiannavas06@gmail.com    | Venezuela |
+| [Sebastián Navas](https://github.com/sebastian-navas) | sebastiannavas06@gmail.com    | Venezuela |
 | [Jesús Ortega](https://github.com/agetro2003)         | jesusdaniolob@gmail.com       | Venezuela |
 
 <p align="right"><a href="#top"> ^ Ir arriba </a></p>
