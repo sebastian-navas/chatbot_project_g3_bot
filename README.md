@@ -16,27 +16,31 @@
 </div>
 <br />
 
-<!-- SHIELDS -->
+<!-- SHIELDS / BADGES -->
 
 <p align="center">
   
-  <a href="https://github.com/VKneider/Chatbot-Project-g3/graphs/contributors">
-  <img src="https://img.shields.io/github/contributors/VKneider/Chatbot-Project-g3" alt="Contributors">
+  <!-- <a href="https://github.com/VKneider/Chatbot-Project-g3/graphs/contributors">
+  <img src="https://img.shields.io/github/contributors/sebastiaannavas/chatbot_project_g3_bot" alt="Contributors">
+  </a> -->
+  
+  <a href="https://github.com/sebastiaannavas/chatbot_project_g3_bot">
+  <img src="https://img.shields.io/github/repo-size/sebastiaannavas/chatbot_project_g3_bot" alt="Repo Size">
   </a>
   
-  <a href="https://github.com/VKneider/Chatbot-Project-g3">
-  <img src="https://img.shields.io/github/repo-size/VKneider/Chatbot-Project-g3" alt="Repo Size">
-  </a>
-  
-  <a href="https://github.com/VKneider/Chatbot-Project-g3/graphs/commit-activity">
-  <img src="https://img.shields.io/github/last-commit/VKneider/Chatbot-Project-g3/develop" alt="Last Commit">
+  <a href="https://github.com/sebastiaannavas/chatbot_project_g3_bot/graphs/commit-activity">
+  <img src="https://img.shields.io/github/last-commit/sebastiaannavas/chatbot_project_g3_bot/master" alt="Last Commit">
   </a>
   
   <a href="#">
-  <img src="https://img.shields.io/netlify/:projectId" alt="Netlify Build">
+  <img src="https://img.shields.io/netlify/2ede680f-2add-4d25-8a1c-a67a250a48de" alt="Netlify Build">
   </a>
   
 </p>
+
+<img src="https://img.shields.io/badge/Railway-0B0D0E.svg?style=for-the-badge&logo=Railway&logoColor=white" align="right" alt="Railway">
+
+<p align="right"> [ currently unavailable ] </p>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -80,6 +84,15 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/es)
 [![Telegram Bot API](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://core.telegram.org/bots/api)
 
+### Otros repositorios :paperclips:
+
+#### Telegram Bot:
+- https://github.com/VKneider/Chatbot-Project-g3
+
+#### Serverless functions:
+- https://github.com/sebastiaannavas/chatbot_project_g3_deploy
+- https://github.com/VKneider/chatbot_project_g3_deploy
+
 <p align="right"><a href="#top"> ^ Ir arriba </a></p>
 
 <!-- SETUP -->
@@ -94,14 +107,25 @@
 - [Netlify CLI](https://docs.netlify.com/cli/get-started/)
 - [Yup](https://www.npmjs.com/package/yup)
 - [MongoDB](https://www.mongodb.com/languages/javascript/mongodb-and-npm-tutorial)
-- [Translate Google](https://www.npmjs.com/package/translate-google)
+- [Nodemailer](https://nodemailer.com/about/)
+```diff
++ ./node_modules/csv-parse/package.json
+
+"exports": {
+-    "./lib/sync": {
+      "import": "./lib/sync.js",
+      "require": "./dist/cjs/sync.cjs"
+    }, ...
+} ...
+```
+<!-- - [Translate Google](https://www.npmjs.com/package/translate-google) -->
 
 ### Instalación :hammer_and_wrench:
 **Para configurar** este proyecto en un repositorio local, clona el proyecto y agrega las dependencias necesarias usando `npm`
 
 ```
-$ git clone https://github.com/VKneider/Chatbot-Project-g3.git
-$ cd ../Chatbot-Project-g3
+$ git clone https://github.com/sebastiaannavas/chatbot_project_g3_bot.git
+$ git clone https://github.com/sebastiaannavas/chatbot_project_g3_deploy.git
 $ npm install <package-spec>
 ```
 **Para ejecutar** este proyecto, utiliza `node` en la activacion del bot y `ntl` en la activación de las `serverless functions`
@@ -124,7 +148,7 @@ const bot = new Telebot({
     ...
 });
 ```
-Además, te invitamos a visitar nuestro [Código de Conducta](https://github.com/VKneider/Chatbot-Project-g3/blob/main/docs/CODE_OF_CONDUCT.md) para conocer un poco más sobre cómo trabajamos :wink:
+Además, te invitamos a visitar nuestro [Código de Conducta](https://github.com/sebastiaannavas/chatbot_project_g3_bot/blob/main/docs/CODE_OF_CONDUCT.md) para conocer un poco más sobre cómo trabajamos :wink:
 
 <p align="right"><a href="#top"> ^ Ir arriba </a></p>
 
@@ -137,7 +161,7 @@ Además, te invitamos a visitar nuestro [Código de Conducta](https://github.com
 | ----------------------------------------------------- | ----------------------------- | --------- |
 | [Victor Kneider](https://github.com/VKneider)         | victorkneider@gmail.com       | Venezuela |
 | [Gianny Marquina](https://github.com/GianMRV)         | gira.208@gmail.com            | Venezuela |
-| [Sebastián Navas](https://github.com/sebastiaannavas) | sebastiannavas06@gmail.com    | Venezuela |
+| [Sebastián Navas](https://github.com/sebastian-navas) | sebastiannavas06@gmail.com    | Venezuela |
 | [Jesús Ortega](https://github.com/agetro2003)         | jesusdaniolob@gmail.com       | Venezuela |
 
 <p align="right"><a href="#top"> ^ Ir arriba </a></p>

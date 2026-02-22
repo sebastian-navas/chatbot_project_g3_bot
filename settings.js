@@ -15,16 +15,16 @@ let BUTTONS = {};
 
 let keys = ["products", "carrito", "info", "buscar", "close", 
             "registrar", "factura", "verCarrito", "language", "opciones", "pago", "modify",
-            "cancelarProd","cancelar"," Valoranos ","enviar","deleteCarrito", "modCarrito","añadirCarrito", "switch"];
+            "admin","password"," Valoranos ","enviar","deleteCarrito", "modCarrito","añadirCarrito", "switch"];
 
 let labels = ["🛍️ Lista de productos", "🛒 Carrito de Compra", "📃 Info Tienda", "🆔 Elegir producto", "🔙 Volver al menu inicial",
               "🔑 Ingresar Datos", "📝 Crear Factura", "👁️‍🗨️ Ver Carrito de Compra", "🔤 Cambiar idioma", "⚙️ Configuraciones", "💳 Métodos de Pago", "📧 Modificar Correo Asociado",
-              "cancelarProd", "cancelar2","📝 Admin ","📤 Enviar Factura", "🛒 Vaciar Carrito", "🔧🛒 Modificar Carrito", "➕ Añadir Productos al Carrito", "/restart"];
+              "admin", "🤫 Ingresa la contraseña","📝 Admin ","📤 Enviar Factura", "🛒 Vaciar Carrito", "🔧🛒 Modificar Carrito", "➕ Añadir Productos al Carrito", "/restart"];
               
 
 let commands = ["/products", "/carrito", "/info", "/buscar", "/start",
                 "/registrar", "/factura", "/verCarrito", "/lang", "/opciones", "/pay", "/modify",
-               "/cancelarProd","/cancelar","/valorar", "/enviarFactura","/vaciarCarrito","/modCart", "/addToCart",  "/start"];
+               "/admin","/contraseña","/valorar", "/enviarFactura","/vaciarCarrito","/modCart", "/addToCart",  "/start"];
 
 let idx = 0, keysLen = keys.length;
 
@@ -36,7 +36,7 @@ for (; idx < keysLen ; idx++) {
 
 const bot = new Telebot({
     //token: '5573269354:AAG0Z4nfZAvq-g41dtHavn0yDsTg5DYTtcM',
-    token: "5443657191:AAF7flC9AsW3rTeYN63RmZ6xg3DuUizzC7w",
+    token: "5388284212:AAHmEF3VaQ12caV7U1QhDwXD1jT19yEsqZw",
     usePlugins: ['namedButtons', 'askUser', 'commandButton'],
     pluginConfig: {
         namedButtons: {
@@ -49,7 +49,7 @@ const bot = new Telebot({
 //'https://62bfacf716537f6573afd4e0--luminous-crisp-2d239d.netlify.app'
 // Instancia Axios para la base de datos
 const API_DATABASE = axios.create({
-    baseURL: 'http://localhost:8888',   //NOTA: CAMBIAR DIRECCIÓN
+    baseURL: 'https://ubiquitous-truffle-b01037.netlify.app',   //NOTA: CAMBIAR DIRECCIÓN
     timeout: 10000,
 });
 
@@ -70,7 +70,8 @@ const ENDPOINT_DATABASE = {
     modCart:"/modCart",
     userData:"/userData",
     createTicket:"/createTicket",
-    sendMail:"/sendMail"
+    sendMail:"/sendMail",
+    sendMessage:"/sendMessage"
     
 }
 
